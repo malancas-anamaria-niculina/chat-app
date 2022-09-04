@@ -1,1 +1,0 @@
-script: 'docker login --username docker1509 --password JMxmU5#bJT4-kM4'
