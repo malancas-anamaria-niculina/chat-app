@@ -8,7 +8,8 @@ import lombok.Builder;
 import lombok.NoArgsConstructor;
 import lombok.AllArgsConstructor;
 
-import java.io.Serializable;
+import java.util.List;
+import java.util.stream.Collector;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -20,15 +21,22 @@ import javax.persistence.GenerationType;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-@Table(name = "user_table")
-public class User implements Serializable {
+@Table(name = "message_table")
+public class Message {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
-    @Column(name = "username", nullable = false, unique = true)
+    @Column(name = "username", nullable = false)
     private String username;
 
-    @Column(name = "password", nullable = false)
-    private String password;
+    @Column(name = "message", nullable = false)
+    private String message;
+
+    @Column(name = "sender", nullable = false)
+    private String sender;
+
+    public List<Message> collect(Collector<Object, ?, List<Object>> list) {
+        return null;
+    }
 }

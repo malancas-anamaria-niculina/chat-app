@@ -43,6 +43,10 @@
     		<groupId>org.springframework.boot</groupId>
     		<artifactId>spring-boot-starter-data-jpa</artifactId>
 		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-log4j2</artifactId>
+		</dependency>
 		<!-- PostgresSQL database -->
 		<dependency>
     		<groupId>org.postgresql</groupId>
@@ -77,37 +81,6 @@
 			<artifactId>commons-dbcp</artifactId>
 			<version>1.4</version>
 		</dependency>
-		<!-- Security -->
-		<dependency>
-    		<groupId>com.auth0</groupId>
-    		<artifactId>java-jwt</artifactId>
-    		<version>3.19.2</version>
-		</dependency>
-		<dependency>
-            <groupId>io.jsonwebtoken</groupId>
-            <artifactId>jjwt-impl</artifactId>
-            <version>0.11.0</version>
-        </dependency>
-		<dependency>
-    		<groupId>org.springframework.security</groupId>
-    		<artifactId>spring-security-core</artifactId>
-    		<version>5.7.2</version>
-		</dependency>
-		<dependency>
-    		<groupId>org.springframework.security</groupId>
-    		<artifactId>spring-security-web</artifactId>
-    		<version>5.7.2</version>
-		</dependency>
-		<dependency>
-    		<groupId>org.springframework.security</groupId>
-    		<artifactId>spring-security-config</artifactId>
-    		<version>5.7.2</version>
-		</dependency>
-		<dependency>
-    		<groupId>io.github.cdimascio</groupId>
-    		<artifactId>java-dotenv</artifactId>
-    	<version>3.0.0</version>
-</dependency>
 	</dependencies>
 
 	<build>
