@@ -13,18 +13,18 @@ import com.chatapp.demo.Service.UserService;
 import com.chatapp.demo.Entity.User;
 
 @RestController
-@RequestMapping(value="/api/user")
+@RequestMapping(value = "/api/user")
 public class UserController {
     @Autowired
     private UserService userService;
 
-    @GetMapping("/users")
-    public List<User> getAllUsers(){
+    @GetMapping("/user")
+    public List<User> getAllUsers() {
         return userService.getUsers();
     }
 
-    @PostMapping(value="/createUser", consumes={"application/json"})
-    public void createUser(@RequestBody User user){
+    @PostMapping(value = "/creatUser", consumes = { "application/json" })
+    public void createUser(@RequestBody User user) {
         userService.createUser(user);
     }
 }
