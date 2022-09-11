@@ -27,7 +27,7 @@ public class MessageService {
 
     public List<Message> getMessagesForUser(String username) {
         List<Message> msg_list = new ArrayList<>();
-        for (Message msg : messageRepository.findAll()) {
+        for (Message msg : getMessages()) {
             if (msg.getUsername().equals(username)) {
                 msg_list.add(msg);
             }
