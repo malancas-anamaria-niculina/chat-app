@@ -13,11 +13,23 @@
   <artifactId>spring-boot-maven-plugin</artifactId>
 </plugin>
 ```
+### Compile Spring Boot project using Maven
+```
+mvn compile
+```
 ### Build Spring Boot project using Maven
 ```
 mvn package
 ```
+### Deploy Spring Boot JAR file to local repository
+```
+mvn install
+```
 ### Run Spring Boot app using Maven
 ```
 mvn spring-boot:run
+```
+### Run the jar file
+```
+java -jar target/demo-0.0.1-SNAPSHOT.jar
 ```
