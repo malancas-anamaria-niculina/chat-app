@@ -29,8 +29,3 @@ mvn install
 ```
 mvn spring-boot:run
 ```
-### Run the jar file
-```
-java -jar <path-to-jar>/<artifactId>-<version>
-java -jar target/demo-0.0.1-SNAPSHOT.jar
-```
